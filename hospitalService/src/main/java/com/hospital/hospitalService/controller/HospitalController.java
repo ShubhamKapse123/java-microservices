@@ -24,7 +24,7 @@ private HospitalServices hospitalServices;
         return  ResponseEntity.ok(hospitalList);
     }
 
-    @GetMapping("/hospitalId")
+    @GetMapping("/{hospitalId}")
     public ResponseEntity<Hospital> getHospital(@PathVariable String hospitalId){
         Hospital hospital= hospitalServices.getHospital(hospitalId);
         return ResponseEntity.ok(hospital);
