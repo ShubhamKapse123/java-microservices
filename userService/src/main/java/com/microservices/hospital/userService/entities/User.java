@@ -3,7 +3,10 @@ package com.microservices.hospital.userService.entities;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import lombok.*;
+
+import java.util.List;
 
 @Entity
 @Setter
@@ -19,4 +22,6 @@ public class User {
     private String userType;
     private String userEmail;
     private String userAbout;
+    @Transient
+    private List<Rating> rating;
 }
