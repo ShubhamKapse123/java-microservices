@@ -7,6 +7,8 @@
         url: jdbc:mysql://localhost:3306/microservices_tables
         username: root
         password: root
+      application:
+        name: HOSPITAL-SERVICE
 
 
       jpa:
@@ -14,4 +16,12 @@
           ddl-auto: update
         show-sql: true
 
+    eureka:
+      instance:
+        prefer-ip-address: true
+      client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+          defaultZone: http://localhost:8085/eureka
 

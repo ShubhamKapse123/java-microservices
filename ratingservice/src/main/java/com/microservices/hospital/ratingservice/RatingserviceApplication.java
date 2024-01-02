@@ -1,14 +1,13 @@
-package com.microservices.hospital.userService;
+package com.microservices.hospital.ratingservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-public class UserServiceApplication {
+public class RatingserviceApplication {
+
 	public static void main(String[] args) {
-		System.out.println("main");
-		SpringApplication.run(UserServiceApplication.class, args);
+		SpringApplication.run(RatingserviceApplication.class, args);
 	}
 
 }
