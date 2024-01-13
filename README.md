@@ -12,11 +12,11 @@ we want to give some limit of retrying the calls. We can set the limit of retry.
 we use in the level of controller with  @GetMapping or we can use with other  rest api annotation. use syntax @Retry(name="retryName",fallbackmethod="fallbackMethod")
 other implimentation in code. add below configuration in application file.
 
--resilience4j:
-      -retry:
-        -instances:
-          -ratingUserRetry:
-            -max-attempts: 3
-            -wait-duration: 5s
+resilience4j:
+      retry:
+        instances:
+          ratingUserRetry:
+            max-attempts: 3
+            wait-duration: 5s
 
 
