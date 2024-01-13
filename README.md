@@ -19,4 +19,7 @@ resilience4j:
             max-attempts: 3
             wait-duration: 5s
 
+for more learing read the documention
+<https://resilience4j.readme.io/docs/retry>
+
 
