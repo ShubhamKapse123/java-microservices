@@ -22,4 +22,19 @@ resilience4j:
 for more learning read the documentation
 <https://resilience4j.readme.io/docs/retry>
 
+#### Topic - Rate limit(Resilience 4J)
+
+This functionality allow limiting access to some servies.
+
+Rate limiter make services highly available by limiting the number of calls we could process in specific windows\perticular time limit.
+
+Align with service objectives: Clearly define the goals of rate limiting in each microservice to guide appropriate configuration.
+Start conservative: Begin with moderate limits and gradually adjust them based on monitoring and analysis.
+Provide clear feedback: Inform clients about rate limits through error messages or API documentation to enhance transparency and prevent frustration.
+Consider dynamic adjustments: Explore approaches to dynamically adapt rate limits based on factors like real-time resource availability or user behavior.
+Test and fine-tune: Thoroughly test rate limiting implementations to ensure they work as intended and avoid unintended consequences.
+
+
+
+
 
